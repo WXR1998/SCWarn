@@ -1,6 +1,6 @@
-train_path: "data/sample/train.csv"
-test_path: "data/sample/abnormal.csv"
-output_path: "result/sample.csv"
+train_path: "data/mlops_data/normal.csv"
+test_path: "data/mlops_data/abnormal.csv"
+output_path: "result/mlops_sample.csv"
 
 scaler: 'standard'
 

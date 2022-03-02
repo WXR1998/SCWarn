@@ -25,9 +25,9 @@ def plot_data(data, dataname, scores, methods, columns, xdate=None):
         else:
             ax[n_dimension + i].plot(list(np.zeros(len(data) - len(scores[i]))) + list(scores[i]), color='darkorange')
         ax[n_dimension + i].set_title(methods[i])
-        ax[n_dimension + i].set_yticks([])
+        # ax[n_dimension + i].set_yticks([])
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-    plt.tight_layout(pad=0)
+    plt.tight_layout(pad=2)
     plt.subplots_adjust(hspace=1)
     plt.savefig('result/' + dataname + '.png')
 
